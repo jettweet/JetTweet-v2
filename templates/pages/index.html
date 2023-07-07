@@ -295,7 +295,7 @@
                           
                                     {{article.jpublish}}
                                     <br>
-                                    {%for cat in category.all%}
+                                    {%for cat in article.category.all%}
                                 
                                     <a href="{%url 'category' cat.slug%}">#{{cat.title}}</a>
                                     <br>
